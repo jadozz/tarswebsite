@@ -516,12 +516,13 @@ p {
     background: #f8f9fa;
     border-radius: var(--border-radius-small);
     padding: 20px;
-    min-height: 100px;
+    min-height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
+    margin-top: 16px;
 }
 
 .demo-screen {
@@ -590,6 +591,9 @@ p {
 .security-badges {
     display: flex;
     gap: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .badge {
@@ -612,7 +616,8 @@ p {
 .speed-meter {
     position: relative;
     width: 80px;
-    height: 40px;
+    height: 60px;
+    margin: 0 auto;
 }
 
 .meter-arc {
@@ -650,6 +655,8 @@ p {
     flex-direction: column;
     gap: 12px;
     width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
 }
 
 .config-item {
