@@ -481,6 +481,9 @@ p {
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
 }
 
 .feature-card:hover {
@@ -510,6 +513,7 @@ p {
 .feature-description {
     color: var(--text-secondary);
     margin-bottom: 24px;
+    flex-grow: 1;
 }
 
 .feature-demo {
@@ -521,8 +525,9 @@ p {
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: visible;
-    margin-top: 16px;
+    overflow: hidden;
+    margin-top: auto;
+    flex-shrink: 0;
 }
 
 .demo-screen {
