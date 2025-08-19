@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARS - Your AI Copilot Extension</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-robot"></i>
+                <span>TARS</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn btn-outline">Sign In</button>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-sparkles"></i>
+                    <span>AI-Powered Browser Extension</span>
+                </div>
+                <h1 class="hero-title">
+                    Your AI Copilot That
+                    <span class="gradient-text">Sees & Acts</span>
+                    On Any Website
+                </h1>
+                <p class="hero-description">
+                    TARS is an intelligent browser extension that understands what you're looking at and can take actions on your behalf. From filling forms to navigating complex workflows - your AI assistant is always ready to help.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-large">
+                        <i class="fab fa-chrome"></i>
+                        Add to Chrome - Free
+                    </button>
+                    <button class="btn btn-outline btn-large">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Active Users</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1M+</span>
+                        <span class="stat-label">Tasks Automated</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4.9★</span>
+                        <span class="stat-label">Chrome Store Rating</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="browser-mockup">
+                    <div class="browser-header">
+                        <div class="browser-controls">
+                            <span class="control red"></span>
+                            <span class="control yellow"></span>
+                            <span class="control green"></span>
+                        </div>
+                        <div class="address-bar">
+                            <i class="fas fa-lock"></i>
+                            <span>example.com</span>
+                        </div>
+                    </div>
+                    <div class="browser-content">
+                        <div class="tars-widget">
+                            <div class="widget-header">
+                                <i class="fas fa-robot"></i>
+                                <span>TARS</span>
+                                <div class="status-indicator"></div>
+                            </div>
+                            <div class="chat-messages">
+                                <div class="message user">Fill out this form with my details</div>
+                                <div class="message ai">
+                                    <div class="typing-indicator">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-highlight"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Intelligent Automation at Your Fingertips</h2>
+                <p class="section-description">TARS understands context, sees what you see, and acts with precision</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="feature-title">Visual Understanding</h3>
+                    <p class="feature-description">TARS can see and understand any webpage content, from forms to complex layouts, making intelligent decisions about what actions to take.</p>
+                    <div class="feature-demo">
+                        <div class="demo-screen">
+                            <div class="scanning-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3 class="feature-title">Smart Actions</h3>
+                    <p class="feature-description">From filling forms to clicking buttons, TARS performs actions with human-like intelligence and precision across any website.</p>
+                    <div class="feature-demo">
+                        <div class="demo-actions">
+                            <div class="action-item">
+                                <i class="fas fa-check"></i>
+                                <span>Form filled automatically</span>
+                            </div>
+                            <div class="action-item">
+                                <i class="fas fa-check"></i>
+                                <span>Button clicked</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="feature-title">Natural Conversation</h3>
+                    <p class="feature-description">Simply tell TARS what you want to accomplish in plain English. No complex commands or technical knowledge required.</p>
+                    <div class="feature-demo">
+                        <div class="chat-preview">
+                            <div class="chat-bubble user">"Book a flight to Paris"</div>
+                            <div class="chat-bubble ai">"I'll help you find flights. Let me search for options..."</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Privacy First</h3>
+                    <p class="feature-description">Your data stays secure. TARS processes information locally and only uses your OpenAI API key stored safely in your browser.</p>
+                    <div class="feature-demo">
+                        <div class="security-badges">
+                            <div class="badge">
+                                <i class="fas fa-lock"></i>
+                                <span>Encrypted</span>
+                            </div>
+                            <div class="badge">
+                                <i class="fas fa-user-shield"></i>
+                                <span>Private</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="feature-title">Lightning Fast</h3>
+                    <p class="feature-description">Powered by advanced AI models, TARS responds instantly and executes tasks faster than manual interaction.</p>
+                    <div class="feature-demo">
+                        <div class="speed-meter">
+                            <div class="meter-arc"></div>
+                            <div class="meter-needle"></div>
+                            <span class="speed-text">2.3s</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="feature-title">Smart Configuration</h3>
+                    <p class="feature-description">Choose your preferred AI model, enable auto-execution, and customize TARS to work exactly how you want it to.</p>
+                    <div class="feature-demo">
+                        <div class="config-panel">
+                            <div class="config-item">
+                                <span>Auto-execute</span>
+                                <div class="toggle active"></div>
+                            </div>
+                            <div class="config-item">
+                                <span>GPT-4 Model</span>
+                                <i class="fas fa-check text-success"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How TARS Works</h2>
+                <p class="section-description">Get started in minutes and automate your browsing experience</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Install Extension</h3>
+                        <p class="step-description">Add TARS to Chrome from the Web Store in one click. No signup required to get started.</p>
+                        <div class="step-visual">
+                            <div class="chrome-icon">
+                                <i class="fab fa-chrome"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Configure Your AI</h3>
+                        <p class="step-description">Add your OpenAI API key and choose your preferred model. Your key stays private and secure in your browser.</p>
+                        <div class="step-visual">
+                            <div class="api-key-input">
+                                <input type="password" placeholder="sk-..." readonly>
+                                <i class="fas fa-key"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Start Automating</h3>
+                        <p class="step-description">Click the TARS icon on any webpage and tell it what you want to do. Watch as it understands and acts on your behalf.</p>
+                        <div class="step-visual">
+                            <div class="automation-demo">
+                                <div class="cursor-pointer"></div>
+                                <div class="action-ripple"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Loved by Thousands</h2>
+                <p class="section-description">See what our users say about TARS</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"TARS has completely transformed how I work online. What used to take me 30 minutes of form filling now takes 30 seconds. It's like having a personal assistant for every website."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=60&h=60&fit=crop&crop=face" alt="Sarah Chen">
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Sarah Chen</span>
+                            <span class="author-title">Product Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"As a developer, I was skeptical about AI automation tools. But TARS actually understands context and makes smart decisions. It's incredibly reliable and saves me hours every week."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face" alt="Michael Rodriguez">
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Michael Rodriguez</span>
+                            <span class="author-title">Senior Developer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I run a small business and handle tons of admin work online. TARS handles all the repetitive tasks while I focus on what matters. It's like having a full-time assistant for free."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face" alt="Emma Thompson">
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Emma Thompson</span>
+                            <span class="author-title">Business Owner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-description">Everything you need to know about TARS</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How does TARS understand what's on my screen?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>TARS uses advanced computer vision and natural language processing to analyze webpage content. It can identify forms, buttons, text fields, and other interactive elements, understanding their context and purpose to take appropriate actions.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is my data secure with TARS?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. TARS processes everything locally in your browser. Your OpenAI API key is stored securely in your browser's local storage and never transmitted to our servers. We prioritize your privacy and security above all else.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do I need an OpenAI API key?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, TARS requires an OpenAI API key to function. This ensures you have full control over your AI usage and costs. You can get an API key from OpenAI's website and configure it in TARS settings.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Which websites does TARS work on?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>TARS works on virtually any website. It's designed to understand and interact with standard web elements across all sites, from simple forms to complex web applications.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I control what actions TARS takes?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! You can enable or disable auto-execution in the settings. When auto-execution is off, TARS will ask for confirmation before taking any action. You have complete control over what it does.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How much does TARS cost?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>TARS is completely free to use! You only pay for your OpenAI API usage, which typically costs just a few cents per interaction. There are no subscription fees or hidden costs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <p class="section-description">Pay only for what you use with OpenAI's API</p>
+            </div>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Free</h3>
+                        <div class="pricing-price">
+                            <span class="price">$0</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>TARS Extension</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>All Core Features</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Unlimited Websites</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Community Support</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline btn-full">Get Started Free</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">OpenAI API</h3>
+                        <div class="pricing-price">
+                            <span class="price">~$0.002</span>
+                            <span class="period">/interaction</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>GPT-4 & GPT-4o Models</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Advanced AI Capabilities</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Fastest Response Times</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Priority Processing</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-full">Start Using API</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Enterprise</h3>
+                        <div class="pricing-price">
+                            <span class="price">Custom</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Custom AI Models</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Team Management</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Advanced Analytics</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Priority Support</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline btn-full">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Automate Your Browsing?</h2>
+                <p class="cta-description">Join thousands of users who save hours every week with TARS</p>
+                <div class="cta-actions">
+                    <button class="btn btn-primary btn-large">
+                        <i class="fab fa-chrome"></i>
+                        Install TARS Now
+                    </button>
+                    <button class="btn btn-outline btn-large">
+                        <i class="fas fa-question-circle"></i>
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-robot"></i>
+                        <span>TARS</span>
+                    </div>
+                    <p class="footer-description">Your intelligent AI copilot for automating web interactions. Save time, increase productivity, and let AI handle the repetitive tasks.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#">Changelog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 TARS. All rights reserved.</p>
+                <div class="footer-badges">
+                    <div class="badge">
+                        <i class="fab fa-chrome"></i>
+                        <span>Available on Chrome Web Store</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
