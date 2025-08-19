@@ -783,30 +783,6 @@ const additionalStyles = `
     }
     
     @media (max-width: 768px) {
-        .nav-menu {
-            position: fixed;
-            top: 70px;
-            left: -100%;
-            width: 100%;
-            height: calc(100vh - 70px);
-            background: white;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 60px 40px 40px;
-            transition: left 0.3s ease;
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-            z-index: 999;
-        }
-        
-        .nav-menu.active {
-            left: 0;
-        }
-        
-        .nav-menu.active .nav-actions-mobile {
-            display: flex;
-        }
-        
         .hamburger.active .bar:nth-child(2) {
             opacity: 0;
         }
