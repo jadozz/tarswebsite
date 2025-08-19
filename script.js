@@ -296,10 +296,19 @@ function initParallaxEffects() {
         const scrollTop = window.pageYOffset;
         
         parallaxElements.forEach(el => {
-            const speed = 0.1;
-            const yPos = -(scrollTop * speed);
-            el.style.transform = `translateY(${yPos}px)`;
+            // Only apply parallax to browser mockup, not feature demos
+            if (!el.closest('.feature-demo')) {
+                const speed = 0.1;
+                const yPos = -(scrollTop * speed);
+                el.style.transform = `translateY(${yPos}px)`;
+            }
         });
+    });
+    
+    // Ensure feature demos stay fixed
+    const featureDemos = document.querySelectorAll('.feature-demo');
+    featureDemos.forEach(demo => {
+        demo.style.transform = 'none';
     });
 }
 

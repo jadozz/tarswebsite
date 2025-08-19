@@ -531,6 +531,7 @@ p {
     margin-top: auto;
     margin-bottom: 0;
     flex-shrink: 0;
+    transform: none !important;
 }
 
 .demo-screen {
