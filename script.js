@@ -290,7 +290,7 @@ function initTypingAnimation() {
 
 // Parallax effects
 function initParallaxEffects() {
-    const parallaxElements = document.querySelectorAll('.browser-mockup, .feature-demo');
+    const parallaxElements = document.querySelectorAll('.browser-mockup');
     
     window.addEventListener('scroll', () => {
         const scrollTop = window.pageYOffset;
@@ -784,13 +784,18 @@ const additionalStyles = `
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            padding-top: 60px;
+            padding: 60px 40px 40px;
             transition: left 0.3s ease;
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            z-index: 999;
         }
         
         .nav-menu.active {
             left: 0;
+        }
+        
+        .nav-menu.active .nav-actions-mobile {
+            display: flex;
         }
         
         .hamburger.active .bar:nth-child(2) {
