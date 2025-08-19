@@ -800,6 +800,12 @@ p {
     color: var(--primary-color);
 }
 
+.tars-intro-icon {
+    font-size: 48px;
+    color: var(--primary-color);
+    animation: bounce 2s infinite;
+}
+
 .automation-demo {
     position: relative;
     width: 80px;
